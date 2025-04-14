@@ -63,6 +63,7 @@ Include this library using `#include <NoiseMaker.h>`. This provides a  [`NoiseMa
 <dt><strong>engine->setNoteOff(note, velocity)</strong></dt>
 <dd>Stop playing MIDI <strong>note</strong> with <strong>velocity</strong> specified in the range 0..1</dd>
 </dl>
+
 The `SynthEngine` object allows modification of all of the synth parameters, including modulation via individual methods. Most parameters can also be set via the `NoiseMaker` <strong>setParameter(index, value)</strong> method, where <strong>index</strong> is one of the constants in the [`SYNTHPARAMETERS` enum](Engine/Params.h), and <strong>value</strong> is in the range 0..1. A corresponding <strong>getParameter(index)</strong> retreives the value of the parameter.
 
 A library of 128 factory sounds is provided. Use the <strong>setProgram(program, nVoices)</strong> method, where <strong>program</strong> is the program number in the range 0..127. The <strong>nVoices</strong> parameter optionally overrides the default number of voices when set non-zero.
